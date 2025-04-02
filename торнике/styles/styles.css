@@ -20,27 +20,36 @@
   box-sizing: border-box;
 }
 
-
 main {
-  flex: 1;
+  /* flex: 1; */
+  flex-grow: 1;
+  display: flex;
 }
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #39555B 0%, #79B4C1 100%);
+  background: linear-gradient(to bottom right, #39555b 0%, #79b4c1 100%);
   background-size: cover;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-
 }
 
-.visually-hidden {
-  overflow: hidden;
-
+.page-section {
+  flex-grow: 1;
+  background-image: url(../img/glav/torniki.png);
+  background-size: contain;
+  background-position: 100% bottom;
+  background-repeat: no-repeat;
+  max-width: 1296px;
+  margin: 0 auto;
 }
+
+/* .visually-hidden { 
+  overflow: hidden;*/
+
 
 header {
   font-family: "Montserrat";
@@ -49,7 +58,7 @@ header {
   line-height: 140%;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   z-index: 1;
   padding-top: 24px;
@@ -66,13 +75,12 @@ header {
   margin-left: auto;
   display: flex;
   gap: 16px;
-
 }
 
 .navigation-link {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
-  border-left: 1px solid #FFFFFF;
+  border-left: 1px solid #ffffff;
   padding-left: 8px;
   display: block;
 }
@@ -82,22 +90,25 @@ header {
   border-color: aqua;
 }
 
-
-
 /* главная */
 
 .main-page__content {
   padding-top: 178px;
-
   padding-bottom: 178px;
 }
 
 .cection-img {
-  position: absolute;
+  /* position: absolute;
   bottom: -163px;
-  right: -39px;
+  right: -39px; */
+}
 
-
+.main-page__wrapper {
+  /* display: flex; */
+  /* background-image: url(../img/glav/torniki.png);
+  background-size: contain;
+  background-position: 100% bottom;
+  background-repeat: no-repeat; */
 }
 
 .section-text {
@@ -107,28 +118,27 @@ header {
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: #FFFFFF;
-  height: 102px;
+  color: #ffffff;
+  /* height: 102px; */
   border-radius: 14px;
   gap: 10px;
   max-width: 811px;
-  background: #94ACB1;
+  background: #94acb1;
   margin: 8px;
-  padding: 16px;
-
-
+  padding: 8px 16px;
 }
 
-.page-section p {
+.section-subtitle {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 700px;
-  top: 341px;
-  left: 72px;
-  width: 698px;
+  /* top: 341px;
+  left: 72px; */
+  /* width: 698px; */
+  max-width: 698px;
   margin: 0;
   padding: 0;
   padding-top: 12px;
@@ -138,7 +148,6 @@ header {
 .container {
   max-width: 1296px;
   margin: auto;
-
 }
 
 .container-muvis {
@@ -155,13 +164,9 @@ header {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 48px;
   padding-bottom: 32px;
-
-
-
-
 }
 
 .product-card-image {
@@ -175,7 +180,7 @@ header {
   line-height: 120%;
   letter-spacing: 4%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -189,13 +194,12 @@ header {
   line-height: 120%;
   letter-spacing: 4%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
 
 button {
   font-family: "Montserrat";
@@ -211,11 +215,10 @@ button {
   padding-bottom: 12px;
   padding-left: 64px;
   border-radius: 24px;
-  box-shadow: 0px 0px 24px 0px #80E8FF80;
-  background: #80E8FF;
+  box-shadow: 0px 0px 24px 0px #80e8ff80;
+  background: #80e8ff;
   border: none;
   cursor: pointer;
-
 }
 
 .product {
@@ -228,9 +231,6 @@ button {
   display: block;
   border: none;
   cursor: pointer;
-
-
-
 }
 
 button:hover {
@@ -245,36 +245,29 @@ footer {
   background: rgba(100, 149, 159, 1);
   position: relative;
   z-index: 1;
-  border-top: 2px solid #FFFFFF;
-
-
+  border-top: 2px solid #ffffff;
 }
 
 .page-footer__container {
   display: grid;
-  grid-template-columns: 1fr 750px 1fr;
+  grid-template-columns: 1fr minmax(400px, 750px) 1fr;
   align-items: center;
-
 }
 
 .footer-social-list {
-
   display: flex;
   list-style: none;
   gap: 8px;
   align-items: center;
 }
 
-
 .page-footer__center {
   text-align: center;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .page-footer__center p {
   margin: 0;
-
 }
 
 .div-footer {
@@ -299,7 +292,7 @@ footer {
   text-decoration-style: solid;
   text-decoration-offset: 0%;
   text-decoration-thickness: 0%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-p:hover {
@@ -319,10 +312,8 @@ footer {
   transition: fill 0.3s;
 }
 
-
-
 /*мобильная версия */
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .footer-social-list {
     display: none;
   }
@@ -332,32 +323,109 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    text-align: center;
   }
 
+  .div-footer {
+
+    font-family: Montserrat;
+    font-weight: 500px;
+    font-size: 12px;
+
+
+
+  }
+
+  .move-footer {
+    display: block;
+  }
+
+  .footer-p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+
+  }
 
   .navigation-list {
     display: none;
-    
   }
-  .product-list-music{
-  grid-template-columns:1fr;
-  }
-  .product-list{
+
+  .product-list-music {
     grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-weight: 600px;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 4%;
+    text-align: center;
+
+
   }
+
+  .product-list {
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
+    font-family: Montserrat;
+font-weight: 600px;
+font-size: 16px;
+line-height: 120%;
+letter-spacing: 4%;
+text-align: center;
+
+  }
+
   .product h1 {
     font-family: Wattauchimma;
-font-weight: 400;
-font-size: 32px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-text-transform: uppercase;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
   }
-  
 
-
-
-
+  .section-text {
+    font-family: Wattauchimma;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
   }
+
+  .section-subtitle {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .page-section {
+    flex-grow: 1;
+    background-image: url(../img/glav/torniki.png);
+    background-size: contain;
+    background-position: 100% bottom;
+    background-repeat: no-repeat;
+    background-size: 242px 321px;
+    background-position: center top;
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+
+  .main-page__content {
+    padding: 282px 0 0 0;
+  }
+}
