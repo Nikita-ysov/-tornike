@@ -21,7 +21,7 @@
 }
 
 main {
-  /* flex: 1; */
+
   flex-grow: 1;
   display: flex;
 }
@@ -47,8 +47,6 @@ body {
   margin: 0 auto;
 }
 
-/* .visually-hidden { 
-  overflow: hidden;*/
 
 
 header {
@@ -97,19 +95,7 @@ header {
   padding-bottom: 178px;
 }
 
-.cection-img {
-  /* position: absolute;
-  bottom: -163px;
-  right: -39px; */
-}
 
-.main-page__wrapper {
-  /* display: flex; */
-  /* background-image: url(../img/glav/torniki.png);
-  background-size: contain;
-  background-position: 100% bottom;
-  background-repeat: no-repeat; */
-}
 
 .section-text {
   font-family: "Wattauchimma";
@@ -135,9 +121,7 @@ header {
   line-height: 140%;
   color: #ffffff;
   max-width: 700px;
-  /* top: 341px;
-  left: 72px; */
-  /* width: 698px; */
+
   max-width: 698px;
   margin: 0;
   padding: 0;
@@ -171,6 +155,14 @@ header {
 
 .product-card-image {
   width: 100%;
+  aspect-ratio: 416 / 416;
+  height: auto;
+}
+
+.product-card-image-muv {
+  width: 100%;
+  aspect-ratio: 416 / 623;
+  height: auto;
 }
 
 .product-list {
@@ -219,6 +211,8 @@ button {
   background: #80e8ff;
   border: none;
   cursor: pointer;
+
+
 }
 
 .product {
@@ -232,6 +226,7 @@ button {
   display: block;
   border: none;
   cursor: pointer;
+
 }
 
 button:hover {
@@ -313,20 +308,71 @@ footer {
   transition: fill 0.3s;
 }
 
-.burger {
+.burger-menu {
+
+  width: 36px;
+  height: 36px;
   display: none;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 9px 4.5px;
 }
+
+.burger-menu span {
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+
+}
+
+
+
 
 
 /*мобильная версия */
 @media (max-width: 360px) {
+  .hidden {
+    display: none;
+}
+.navigation-list {
+  flex-direction: column; 
+  position: absolute; 
+  top: 60px; 
+  left: 0; 
+  background: linear-gradient(111.34deg, #39555B 0%, #79B4C1 100%);
+  ; 
+  width: 100%; 
+  z-index: 1000; 
+  padding-left: 0; 
+  margin-top: 0; 
+  border-top: 1px solid #444; 
+}
+
+.navigation-item {
+  margin-left: 0; 
+  padding: 10px; 
+  text-align: center; 
+}
+
+
+
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .page-heder__content {
+    padding: 12px 12px;
+  }
+
   .footer-social-list {
     display: none;
   }
 
   footer {
     width: 100%;
-    position: fixed;
+
     bottom: 0;
     left: 0;
   }
@@ -336,14 +382,16 @@ footer {
     font-family: Montserrat;
     font-weight: 500px;
     font-size: 12px;
-
-
-
   }
 
   .move-footer {
     display: block;
   }
+
+  .muvis-t {
+    display: block;
+  }
+
 
   .footer-p {
     font-family: Montserrat;
@@ -355,9 +403,7 @@ footer {
 
   }
 
-  .navigation-list {
-    display: none;
-  }
+
 
 
   .product-list-music {
@@ -387,6 +433,8 @@ footer {
 
   }
 
+
+
   .product h1 {
     font-family: Wattauchimma;
     font-weight: 400;
@@ -404,6 +452,7 @@ footer {
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
+    margin: 0px;
   }
 
   .section-subtitle {
@@ -418,6 +467,37 @@ footer {
   .button {
     display: block;
     margin: 0 auto;
+    width: 336px;
+    height: 27px;
+    padding-top: 6px;
+    padding-right: 32px;
+    padding-bottom: 6px;
+    padding-left: 32px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .button-mu {
+    width: 336px;
+    height: 27px;
+    padding-top: 6px;
+    padding-right: 32px;
+    padding-bottom: 6px;
+    padding-left: 32px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .page-footer__container {
+    grid-template-columns: 1fr;
   }
 
   .page-section {
@@ -436,4 +516,8 @@ footer {
     padding: 282px 0 0 0;
   }
 
+  .hidden {
+    display: none;
+
+  }
 }
