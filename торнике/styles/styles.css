@@ -222,6 +222,7 @@ button {
 }
 
 .product {
+  width: 100%;
   margin-bottom: 32px;
 }
 
@@ -304,13 +305,18 @@ footer {
   transition: transform 0.3s;
 }
 
-.button-footer:hover .img-footer {
+.button-footer:hover {
   transform: scale(1.1);
 }
 
-.img-foote {
+.button-footer {
   transition: fill 0.3s;
 }
+
+.burger {
+  display: none;
+}
+
 
 /*мобильная версия */
 @media (max-width: 360px) {
@@ -353,6 +359,7 @@ footer {
     display: none;
   }
 
+
   .product-list-music {
     grid-template-columns: 1fr;
     width: 95%;
@@ -372,11 +379,11 @@ footer {
     width: 95%;
     margin: 0 auto;
     font-family: Montserrat;
-font-weight: 600px;
-font-size: 16px;
-line-height: 120%;
-letter-spacing: 4%;
-text-align: center;
+    font-weight: 600px;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 4%;
+    text-align: center;
 
   }
 
@@ -428,4 +435,5 @@ text-align: center;
   .main-page__content {
     padding: 282px 0 0 0;
   }
+
 }
