@@ -536,6 +536,10 @@ footer {
 
 @media (min-width:451px) and (max-width: 902px) {
   
+  .hidden {
+    display: none;
+  }
+
   .page-heder__content {
     padding: 12px 12px;
   }
