@@ -533,15 +533,32 @@ footer {
     padding: 282px 0 0 0;
   }
 }
+
 @media (min-width:451px) and (max-width: 902px) {
+  
   .page-heder__content {
     padding: 12px 12px;
   }
+
+  .navigation-list {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(111.34deg, #39555B 0%, #79B4C1 100%);
+    z-index: 1000;
+    padding-left: 0;
+    margin-top: 0;
+    border-top: 1px solid #444;
+  }
+
+  .navigation-item {
+    margin-left: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
   .burger-menu {
     display: flex;
-  }
-  .navigation-list {
-    display: none;
   }
 
   footer {
@@ -564,7 +581,6 @@ footer {
     display: block;
   }
 
-
   .footer-p {
     font-family: Montserrat;
     font-weight: 400;
@@ -573,12 +589,15 @@ footer {
     letter-spacing: 0%;
     text-align: center;
   }
+
   .page-footer__container {
     grid-template-columns: 1fr;
   }
-  .footer-social{
+
+  .footer-social {
     display: none;
   }
+
   .page-section {
     flex-grow: 1;
     background-image: url(../img/glav/torniki.png);
@@ -590,6 +609,7 @@ footer {
     max-width: 1296px;
     margin: 0 auto;
   }
+
   .section-text {
     font-family: Wattauchimma;
     font-weight: 400;
@@ -599,6 +619,7 @@ footer {
     text-transform: uppercase;
     margin: 0px;
   }
+
   .product h1 {
     font-family: "Wattauchimma";
     font-weight: 400;
@@ -611,6 +632,7 @@ footer {
     padding-top: 48px;
     padding-bottom: 32px;
   }
+
   .button {
     display: block;
     margin: 12px 12px 203px 12px;
@@ -627,5 +649,13 @@ footer {
     letter-spacing: 0%;
     text-align: center;
   }
-
+  .main-page__content{
+    margin:10px;
+  }
+  .product-list-music{
+    margin: 10px;
+  }
+  .product-list{
+    margin: 10px;
+  }
 }
