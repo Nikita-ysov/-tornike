@@ -331,7 +331,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin: 50px;
 }
 
 .centered-image {
@@ -535,7 +535,7 @@ footer {
 }
 
 @media (min-width:451px) and (max-width: 902px) {
-  
+
   .hidden {
     display: none;
   }
@@ -653,13 +653,44 @@ footer {
     letter-spacing: 0%;
     text-align: center;
   }
-  .main-page__content{
-    margin:10px;
-  }
-  .product-list-music{
+
+  .main-page__content {
     margin: 10px;
   }
-  .product-list{
+
+  .product-list-music {
     margin: 10px;
   }
+
+  .product-list {
+    margin: 10px;
+  }
+}
+
+@media (min-width:902px) and (max-width: 1300px) {
+  .page-heder {
+    margin: 10px;
+  }
+
+  .footer-social-list {
+    margin: 10px;
+    
+  }
+
+  .navigation-link {
+    margin: 10px;
+  }
+
+  .product-list-music {
+    margin: 10px;
+  }
+
+  .product-list {
+    margin: 10px;
+  }
+  .move-footer {
+    display: block;
+  }
+  
+
 }
