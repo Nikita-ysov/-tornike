@@ -363,7 +363,7 @@ footer {
 
 
 /*мобильная версия */
-@media (max-width: 450px) {
+@media (max-width: 420px) {
   .hidden {
     display: none;
   }
@@ -534,7 +534,7 @@ footer {
   }
 }
 
-@media (min-width:451px) and (max-width: 902px) {
+@media (min-width:420px) and (max-width: 1016px) {
 
   .hidden {
     display: none;
@@ -602,16 +602,10 @@ footer {
     display: none;
   }
 
-  .page-section {
-    flex-grow: 1;
-    background-image: url(../img/glav/torniki.png);
-    background-size: contain;
-    background-position: 100% bottom;
-    background-repeat: no-repeat;
-    background-size: 242px 321px;
-    background-position: center top;
-    max-width: 1296px;
-    margin: 0 auto;
+
+  .main-page__content {
+    padding: 282px 0 0 0;
+    margin: 10px;
   }
 
   .section-text {
@@ -622,12 +616,23 @@ footer {
     letter-spacing: 0%;
     text-transform: uppercase;
     margin: 0px;
+    display: inline-block;
+
+  }
+
+  .section-subtitle {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
   }
 
   .product h1 {
     font-family: "Wattauchimma";
-    font-weight: 400;
-    font-size: 50px;
+    font-weight: 400px;
+    font-size: 40px;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
@@ -635,6 +640,7 @@ footer {
     color: #ffffff;
     padding-top: 48px;
     padding-bottom: 32px;
+
   }
 
   .button {
@@ -654,27 +660,50 @@ footer {
     text-align: center;
   }
 
-  .main-page__content {
-    margin: 10px;
-  }
+
 
   .product-list-music {
+
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 4%;
+    text-align: center;
+    color: #ffffff;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     margin: 10px;
   }
 
   .product-list {
+
+    font-family: "Montserrat";
+    font-weight: 600px;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 4%;
+    text-align: center;
+    color: #ffffff;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     margin: 10px;
   }
+
 }
 
-@media (min-width:902px) and (max-width: 1300px) {
+@media (min-width:1016px) {
   .page-heder {
     margin: 10px;
   }
 
   .footer-social-list {
     margin: 10px;
-    
+
   }
 
   .navigation-link {
@@ -688,9 +717,28 @@ footer {
   .product-list {
     margin: 10px;
   }
-  .move-footer {
-    display: block;
+
+
+
+}
+
+@media (min-width:420px) and (max-width: 523px) {
+  .page-section {
+    flex-grow: 1;
+    background-image: url(../img/glav/torniki.png);
+    background-size: contain;
+    background-position: 100% bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+    max-width: 1296px;
+    margin: 0 auto;
   }
-  
+
+  .main-page__content {
+    padding: 320px 0 0 0;
+  }
+
+
 
 }
