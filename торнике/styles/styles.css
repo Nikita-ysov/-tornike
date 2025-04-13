@@ -150,6 +150,7 @@ header {
   color: #ffffff;
   padding-top: 48px;
   padding-bottom: 32px;
+
 }
 
 .product-card-image {
@@ -377,6 +378,7 @@ footer {
     padding-left: 0;
     margin-top: 0;
     border-top: 1px solid #444;
+
   }
 
   .navigation-item {
@@ -469,7 +471,9 @@ footer {
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 11px;
+    display: inline-block;
+
   }
 
   .section-subtitle {
@@ -626,7 +630,7 @@ footer {
     font-size: 15px;
     line-height: 140%;
     letter-spacing: 0%;
-    text-align: center;
+
   }
 
   .product h1 {
@@ -691,7 +695,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
-    margin:5px;
+    margin: 5px;
   }
 
 }
@@ -706,7 +710,7 @@ footer {
 
   }
 
- 
+
   .product-list-music {
     margin: 10px;
   }
@@ -719,7 +723,7 @@ footer {
 
 }
 
-@media (min-width:420px) and (max-width: 523px) {
+@media (min-width:420px) and (max-width: 572px) {
   .page-section {
     flex-grow: 1;
     background-image: url(../img/glav/torniki.png);
