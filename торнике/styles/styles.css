@@ -690,8 +690,8 @@ footer {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 10px;
+    gap: 5px;
+    margin:5px;
   }
 
 }
@@ -706,10 +706,7 @@ footer {
 
   }
 
-  .navigation-link {
-    margin: 10px;
-  }
-
+ 
   .product-list-music {
     margin: 10px;
   }
