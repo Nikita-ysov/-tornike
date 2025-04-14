@@ -108,10 +108,12 @@ header {
   /* height: 102px; */
   border-radius: 14px;
   gap: 10px;
-  max-width: 811px;
+
   background: #94acb1;
   margin: 8px;
   padding: 8px 16px;
+  width: fit-content;
+
 }
 
 .section-subtitle {
@@ -364,12 +366,13 @@ footer {
 
 
 /*мобильная версия */
-@media (max-width: 420px) {
+@media (max-width:500px) {
   .hidden {
     display: none;
   }
 
   .navigation-list {
+    
     flex-direction: column;
     position: absolute;
     left: 0;
@@ -380,6 +383,7 @@ footer {
     border-top: 1px solid #444;
 
   }
+  
 
   .navigation-item {
     margin-left: 0;
@@ -463,7 +467,10 @@ footer {
     text-align: center;
     text-transform: uppercase;
   }
-
+  .main-page__content{
+  display: grid;
+  place-items: center;
+  }
   .section-text {
     font-family: Wattauchimma;
     font-weight: 400;
@@ -538,7 +545,7 @@ footer {
   }
 }
 
-@media (min-width:420px) and (max-width: 1016px) {
+@media (min-width:500px) and (max-width: 1016px) {
 
   .hidden {
     display: none;
@@ -627,7 +634,7 @@ footer {
   .section-subtitle {
     font-family: Montserrat;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 140%;
     letter-spacing: 0%;
 
@@ -646,26 +653,27 @@ footer {
     padding-bottom: 32px;
 
   }
-
-  .button {
-    display: block;
-    margin: 12px 12px 203px 12px;
-    width: 336px;
-    height: 27px;
-    padding-top: 6px;
-    padding-right: 32px;
-    padding-bottom: 6px;
-    padding-left: 32px;
-    font-family: Montserrat;
+  button {
+    font-family: "Montserrat";
     font-weight: 500;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 100%;
-    letter-spacing: 0%;
     text-align: center;
-  }
-
-
-
+    top: 457px;
+    left: 72px;
+    gap: 10px;
+    padding-top: 12px;
+    padding-right: 64px;
+    padding-bottom: 12px;
+    padding-left: 64px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 24px 0px #80e8ff80;
+    background: #80e8ff;
+    border: none;
+    cursor: pointer;
+    margin: 8px;
+    
+}
   .product-list-music {
 
     font-family: "Montserrat";
@@ -678,7 +686,7 @@ footer {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 10px;
     margin: 10px;
   }
 
@@ -699,7 +707,7 @@ footer {
   }
 
 }
-
+/* просто отсупы  */
 @media (min-width:1016px) {
   .page-heder {
     margin: 10px;
@@ -722,24 +730,71 @@ footer {
 
 
 }
-
-@media (min-width:420px) and (max-width: 572px) {
+/*  задний фон главной страницы  */
+@media (min-width:500px) and (max-width: 605px) {
   .page-section {
     flex-grow: 1;
     background-image: url(../img/glav/torniki.png);
-    background-size: contain;
+    background-size: cover;
     background-position: 100% bottom;
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center top;
     max-width: 1296px;
-    margin: 0 auto;
+    margin: 0 auto;}
+    .main-page__content {
+      padding: 300px 0 0 0;
+      margin: 10px;
+  
+}
+
+
+}
+/* отдельный заголовок */
+@media (min-width:738px) and (max-width: 1106px) {
+  .section-text {
+    font-family: "Wattauchimma";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #ffffff;
+    /* height: 102px; */
+    border-radius: 14px;
+    gap: 10px;
+    background: #94acb1;
+    margin: 8px;
+    padding: 8px 16px;
+    width: fit-content;
+}
+}
+@media (min-width:1106px) and (max-width: 1159px) {
+  .section-text {
+    font-family: "Wattauchimma";
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+    border-radius: 14px;
+    gap: 10px;
+    background: #94acb1;
+    margin: 8px;
+    padding: 8px 16px;
+    width: fit-content;
+}
+}
+/* чертов текст  */
+@media (max-width: 365px) {
+  .section-text {
+      font-family: Wattauchimma;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      margin: 11px;
+      display: inline-block;
   }
-
-  .main-page__content {
-    padding: 320px 0 0 0;
-  }
-
-
-
 }
