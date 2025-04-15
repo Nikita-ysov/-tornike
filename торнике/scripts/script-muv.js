@@ -1,22 +1,28 @@
 document.getElementById('burger-menu').addEventListener('click', function() {
     const navList = document.querySelector('.navigation-list');
     
-    // Проверяем, есть ли класс 'hidden'
-    if (navList.classList.contains('hidden')) {
-        navList.classList.remove('hidden'); // Убираем класс 'hidden', чтобы открыть меню
+     if (navList.classList.contains('hidden')) {
+        navList.classList.remove('hidden'); 
     } else {
-        navList.classList.add('hidden'); // Добавляем класс 'hidden', чтобы закрыть меню
+        navList.classList.add('hidden'); 
     }
 });
-document.querySelector('.button-mu').addEventListener('click', function() {
-    const hiddenItems = document.querySelectorAll('.product-card-m.hidden');
 
+function showHiddenItems() {
+    const hiddenItems = document.querySelectorAll('.product-card.hidden'); 
     if (hiddenItems.length > 0) {
         hiddenItems.forEach(item => {
-            item.classList.remove('hidden');
+            item.classList.remove('hidden'); 
         });
-        
-        
+        return true; 
+    }
+    return false;
+}
+function handleButtonClick() {
+    const itemsShown = showHiddenItems();
+    const hiddenItems = document.querySelectorAll('.product-card.hidden');
+    if (hiddenItems.length === 0) {
         this.style.display = 'none'; 
     }
-});
+}
+document.querySelector('.button-mu').addEventListener('click', handleButtonClick);
