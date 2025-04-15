@@ -1,7 +1,8 @@
 document.getElementById('burger-menu').addEventListener('click', function() {
     const navList = document.querySelector('.navigation-list');
     
-     if (navList.classList.contains('hidden')) {
+    
+    if (navList.classList.contains('hidden')) {
         navList.classList.remove('hidden'); 
     } else {
         navList.classList.add('hidden'); 
